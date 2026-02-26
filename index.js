@@ -359,7 +359,6 @@ client.on("guildMemberAdd", async (member) => {
           { name: "📅 Compte créé", value: `<t:${Math.floor(member.user.createdTimestamp / 1000)}:R>`, inline: false }
         )
         .setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 256 }))
-        .setImage("https://i.postimg.cc/0jZ7h0Hq/welcome-banner.png") // ✅ ICI
         .setFooter({ text: `${member.guild.name} • Bienvenue` })
         .setTimestamp();
 
